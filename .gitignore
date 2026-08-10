@@ -1,0 +1,6 @@
+.DS_Store
+Thumbs.db
+*.log
+
+# Hráefnismappa með upprunalegum lógóskrám — ekki hluti af sjálfri síðunni
+Logo/

@@ -1,0 +1,20 @@
+/* Bender ehf — sérsniðnir stílar sem Tailwind sinnir ekki */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.placeholder-img {
+  background-image: repeating-linear-gradient(
+    135deg,
+    #EAF7EE,
+    #EAF7EE 10px,
+    #DFF0E4 10px,
+    #DFF0E4 20px
+  );
+}
+
+:focus-visible {
+  outline: 3px solid #167A3A;
+  outline-offset: 2px;
+}
