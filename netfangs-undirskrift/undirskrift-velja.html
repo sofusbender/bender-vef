@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="is">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bender ehf — undirskrift úr vefnum</title>
+<style>
+:root{
+  --brand:#28AB4A; --brand-deep:#167A3A; --brand-light:#EAF7EE;
+  --ink:#221F20; --ink-soft:#55504F; --rule:#DCEEE1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:var(--ink);font-family:system-ui,-apple-system,"Segoe UI",sans-serif;line-height:1.55;padding:32px 18px 80px}
+.wrap{max-width:860px;margin:0 auto}
+h1{font-size:clamp(23px,4vw,32px);letter-spacing:-.02em;font-weight:800}
+.sub{color:var(--ink-soft);margin-top:10px;max-width:62ch}
+.tag{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--brand-deep);background:var(--brand-light);border-radius:999px;padding:4px 12px}
+section{margin-top:42px;border-top:1px solid var(--rule);padding-top:22px}
+h2{font-size:20px;letter-spacing:-.01em;margin:10px 0 4px;font-weight:800}
+.note{font-size:14px;color:var(--ink-soft);max-width:66ch}
+.flag{background:var(--brand-light);border-radius:14px;padding:16px 18px;margin-top:16px;font-size:14px;color:#33383C}
+.flag code{background:#fff;padding:1px 6px;border-radius:5px;font-size:13px}
+.preview{background:#fff;border:2px solid var(--brand-light);border-radius:16px;padding:26px;margin-top:18px;overflow-x:auto}
+.bar{display:flex;gap:10px;align-items:center;margin-top:14px;flex-wrap:wrap}
+button{font:inherit;font-size:13px;font-weight:600;padding:9px 18px;border:2px solid var(--ink);border-radius:999px;background:var(--brand);color:var(--ink);cursor:pointer;transition:.15s}
+button:hover{background:var(--ink);color:#fff}
+button.ghost{background:transparent}
+button.ghost:hover{background:var(--ink);color:#fff}
+pre{display:none;background:var(--ink);color:#D7DBDE;padding:16px;border-radius:12px;overflow:auto;font-size:12px;line-height:1.5;margin-top:12px;max-height:380px}
+pre.open{display:block}
+.ok{font-size:13px;color:var(--brand-deep);font-weight:600}
+ul{margin:10px 0 0 18px;font-size:14px;color:var(--ink-soft)}
+li{margin-bottom:7px}
+table.specs{border-collapse:collapse;margin-top:14px;font-size:13px;width:100%}
+table.specs th,table.specs td{text-align:left;padding:9px 10px;border-bottom:1px solid var(--rule)}
+table.specs th{font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);font-weight:700}
+table.specs code{font-size:12px;background:var(--brand-light);padding:1px 5px;border-radius:4px}
+:focus-visible{outline:3px solid var(--brand-deep);outline-offset:3px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<span class="tag">Bender ehf</span>
+<h1>Undirskrift byggð á nýja vefnum</h1>
+<p class="sub">Sama uppbygging og bender.is: Bender-merkið stýrir, umboðin sex fylgja í röð fyrir neðan og vefslóðirnar standa undir þeim sem texti. Myndaskrárnar eru þær sömu og vefurinn notar — ein mappa, ekkert tvíverk.</p>
+
+<div class="flag">
+  <strong>Myndaslóðirnar vísa á <code>sofusbender.github.io</code> í bili.</strong> bender.is er ekki komið í loftið ennþá, svo þangað til DNS er tengt vísa merkin á GitHub Pages-útgáfuna af vefnum (sömu skrár). Þegar bender.is fer í loftið er nóg að leita-og-skipta út <code>sofusbender.github.io/bender-vef</code> fyrir <code>bender.is</code> í kóðanum hér fyrir neðan.
+</div>
+
+<!-- ══════════ FULL ══════════ -->
+<section>
+  <span class="tag">Aðalútgáfa</span>
+  <h2>Full undirskrift — með öllum umboðum</h2>
+  <p class="note">Bender-merkið, nafn og tengiliðaupplýsingar efst. Græn lína skiptir, þjónustuloforðið kemur næst, svo öll sex umboðsmerkin og vefslóðirnar undir. Merkin brjóta sig sjálf í tvær línur á mjóum skjá.</p>
+  <div class="preview" id="prev-full"></div>
+  <div class="bar">
+    <button data-copy="sig-full">Afrita HTML</button>
+    <button class="ghost" data-toggle="code-full">Sýna kóða</button>
+    <span class="ok" id="ok-full"></span>
+  </div>
+  <pre id="code-full"></pre>
+</section>
+
+<!-- ══════════ SVAR ══════════ -->
+<section>
+  <span class="tag">Svarútgáfa</span>
+  <h2>Stutt — fyrir svör í sama þræði</h2>
+  <p class="note">Sömu upplýsingar, engin merki. Notaðu þessa á svör þegar fulla undirskriftin er þegar komin fyrr í þræðinum — annars staflast sex merkjaraðir upp í hverjum einasta pósti.</p>
+  <div class="preview" id="prev-stutt"></div>
+  <div class="bar">
+    <button data-copy="sig-stutt">Afrita HTML</button>
+    <button class="ghost" data-toggle="code-stutt">Sýna kóða</button>
+    <span class="ok" id="ok-stutt"></span>
+  </div>
+  <pre id="code-stutt"></pre>
+</section>
+
+<section>
+  <span class="tag">Myndaskrár</span>
+  <h2>Sjö PNG — sömu og vefurinn notar</h2>
+  <p class="note">Kóðinn vísar á <code>https://sofusbender.github.io/bender-vef/assets/img/…</code>, nákvæmlega sömu skrár og <code>index.html</code> notar. Þegar bender.is fer í loftið virka merkin sjálfkrafa eftir slóðaskiptin sem nefnd eru að ofan. Breiddirnar hér eru reiknaðar beint út frá raunverulegum stærðarhlutföllum skránna — ekki ágiskun — svo ekkert merki teygist eða skekkist.</p>
+  <table class="specs">
+    <tr><th>Merki</th><th>Skrá</th><th>Stærð í HTML</th><th>Hlekkur</th></tr>
+    <tr><td>Bender</td><td><code>bender-logo.png</code></td><td>61 × 40</td><td>bender.is</td></tr>
+    <tr><td>AJ Vörulistinn</td><td><code>aj-logo.png</code></td><td>33 × 24</td><td>ajvorulistinn.is</td></tr>
+    <tr><td>Vega</td><td><code>vega-logo.png</code></td><td>60 × 18</td><td>vega.is</td></tr>
+    <tr><td>Bentley</td><td><code>bentley-wordmark.png</code></td><td>52 × 14</td><td>bentley.is</td></tr>
+    <tr><td>SuperSellerS</td><td><code>supersellers-logo.png</code></td><td>24 × 24</td><td>supersellers.is</td></tr>
+    <tr><td>ProFlow</td><td><code>proflow-logo.png</code></td><td>37 × 20</td><td>proflow.se</td></tr>
+    <tr><td>Lyngsoe</td><td><code>lyngsoe-logo.png</code></td><td>34 × 20</td><td>lyngsoesystems.com</td></tr>
+  </table>
+  <p class="note" style="margin-top:14px">Bentley-merkið er í tveimur skrám á vefnum (tákn + orðmerki). Í undirskrift dugar orðmerkið eitt — sjö smámyndir í röð eru nógu þéttar þótt Bentley fái ekki tvær.</p>
+</section>
+
+<section>
+  <span class="tag">Áður en þetta fer út</span>
+  <h2>Sex atriði</h2>
+  <ul>
+    <li><strong>Myndablokkun er meginástæðan</strong> fyrir textalínunni með vefslóðunum. Mörg póstforrit sýna ekki myndir sjálfkrafa og þá er merkjaröðin bara tómt bil. Ekki fjarlægja þá línu.</li>
+    <li><strong>Merkin ættu að vera í einum lit eða gráskala.</strong> Sjö litrík merki hlið við hlið lesast eins og auglýsingaborði. Ein grá útgáfa af hverju gerir röðina að kerfi og skilur græna Bender-litinn eftir sem eina litinn í undirskriftinni. (Núna eru öll merkin í upprunalegu litunum sínum — láttu mig vita ef þú vilt að ég geri gráskala-útgáfur.)</li>
+    <li><strong>Rúnnuð horn hverfa í Outlook</strong> og verða ferköntuð. Það er í lagi — undirskriftin er hönnuð til að þola það.</li>
+    <li><strong>Aldrei innfelldar myndir</strong> (embedded/base64). Þær enda sem viðhengi og fá póstinn til að líta út eins og ruslpóst.</li>
+    <li><strong>Tvö símanúmer:</strong> 557-6050 er aðalnúmer Bender, 550-0143 er beint númer. Bæði birtast í undirskriftinni.</li>
+    <li><strong>Prófaðu í Outlook fyrir Windows.</strong> Það er eini biðillinn sem brýtur hluti — og sá sem viðskiptavinirnir nota.</li>
+  </ul>
+</section>
+
+</div>
+
+<!-- ═══════ hráar undirskriftir ═══════ -->
+<script type="text/plain" id="sig-full">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;max-width:560px;">
+  <tr>
+    <td valign="top" style="padding:0 20px 0 0;">
+      <a href="https://sofusbender.github.io/bender-vef/"><img src="https://sofusbender.github.io/bender-vef/assets/img/bender-logo.png" width="61" height="40" alt="Bender ehf" style="display:block;border:0;width:61px;height:40px;"></a>
+    </td>
+    <td valign="top" style="border-left:1px solid #DCEEE1;padding:0 0 0 20px;">
+      <div style="font-size:16px;font-weight:bold;color:#221F20;line-height:1.3;">Sófus Máni Bender</div>
+      <div style="font-size:13px;color:#55504F;line-height:1.5;padding-top:3px;">Söluráðgjafi &#183; Bender ehf</div>
+      <div style="font-size:13px;color:#221F20;line-height:1.7;padding-top:10px;">
+        <a href="tel:5576050" style="color:#221F20;text-decoration:none;font-weight:bold;">557-6050</a>
+        <span style="color:#DCEEE1;">&#183;</span>
+        <a href="tel:5500143" style="color:#221F20;text-decoration:none;font-weight:bold;">550-0143</a>
+        <span style="color:#DCEEE1;">&#183;</span>
+        <a href="mailto:sofus@bender.is" style="color:#221F20;text-decoration:none;">sofus@bender.is</a>
+      </div>
+      <div style="font-size:12px;color:#55504F;line-height:1.6;padding-top:3px;">
+        Barðastaðir 1-5, 112 Reykjavík
+        <span style="color:#DCEEE1;">&#183;</span>
+        <a href="https://sofusbender.github.io/bender-vef/" style="color:#167A3A;text-decoration:none;font-weight:bold;">bender.is</a>
+      </div>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" style="padding:16px 0 0 0;">
+      <div style="border-top:3px solid #28AB4A;font-size:0;line-height:0;">&nbsp;</div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:12px;color:#221F20;line-height:1.6;padding-top:11px;">
+        Heimsókn, ráðgjöf og rýmisteikning fylgja kaupum hjá Bender.
+      </div>
+      <div style="padding-top:13px;">
+        <a href="https://ajvorulistinn.is"><img src="https://sofusbender.github.io/bender-vef/assets/img/aj-logo.png" width="33" height="24" alt="AJ Vörulistinn" style="border:0;width:33px;height:24px;vertical-align:middle;margin:0 20px 10px 0;"></a><a href="https://vega.is"><img src="https://sofusbender.github.io/bender-vef/assets/img/vega-logo.png" width="60" height="18" alt="Vega" style="border:0;width:60px;height:18px;vertical-align:middle;margin:0 20px 10px 0;"></a><a href="https://bentley.is"><img src="https://sofusbender.github.io/bender-vef/assets/img/bentley-wordmark.png" width="52" height="14" alt="Bentley" style="border:0;width:52px;height:14px;vertical-align:middle;margin:0 20px 10px 0;"></a><a href="https://supersellers.is"><img src="https://sofusbender.github.io/bender-vef/assets/img/supersellers-logo.png" width="24" height="24" alt="SuperSellerS" style="border:0;width:24px;height:24px;vertical-align:middle;margin:0 20px 10px 0;"></a><a href="https://proflow.se"><img src="https://sofusbender.github.io/bender-vef/assets/img/proflow-logo.png" width="37" height="20" alt="ProFlow" style="border:0;width:37px;height:20px;vertical-align:middle;margin:0 20px 10px 0;"></a><a href="https://lyngsoesystems.com/library"><img src="https://sofusbender.github.io/bender-vef/assets/img/lyngsoe-logo.png" width="34" height="20" alt="Lyngsoe Library Systems" style="border:0;width:34px;height:20px;vertical-align:middle;margin:0 0 10px 0;"></a>
+      </div>
+      <div style="font-family:Arial,Helvetica,sans-serif;font-size:11px;color:#55504F;line-height:1.9;padding-top:4px;">
+        <a href="https://ajvorulistinn.is" style="color:#55504F;text-decoration:none;">ajvorulistinn.is</a>
+        <span style="color:#DCEEE1;">&#124;</span>
+        <a href="https://vega.is" style="color:#55504F;text-decoration:none;">vega.is</a>
+        <span style="color:#DCEEE1;">&#124;</span>
+        <a href="https://bentley.is" style="color:#55504F;text-decoration:none;">bentley.is</a>
+        <span style="color:#DCEEE1;">&#124;</span>
+        <a href="https://supersellers.is" style="color:#55504F;text-decoration:none;">supersellers.is</a>
+        <span style="color:#DCEEE1;">&#124;</span>
+        <a href="https://proflow.se" style="color:#55504F;text-decoration:none;">proflow.se</a>
+        <span style="color:#DCEEE1;">&#124;</span>
+        <a href="https://lyngsoesystems.com/library" style="color:#55504F;text-decoration:none;">lyngsoesystems.com</a>
+      </div>
+    </td>
+  </tr>
+</table>
+</script>
+
+<script type="text/plain" id="sig-stutt">
+<table role="presentation" cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;">
+  <tr>
+    <td style="border-left:3px solid #28AB4A;padding:2px 0 2px 14px;">
+      <div style="font-size:15px;font-weight:bold;color:#221F20;line-height:1.3;">Sófus Máni Bender</div>
+      <div style="font-size:13px;color:#55504F;line-height:1.5;padding-top:2px;">Söluráðgjafi &#183; Bender ehf</div>
+      <div style="font-size:13px;color:#221F20;line-height:1.7;padding-top:9px;">
+        <a href="tel:5576050" style="color:#221F20;text-decoration:none;font-weight:bold;">557-6050</a>
+        <span style="color:#DCEEE1;">&#183;</span>
+        <a href="tel:5500143" style="color:#221F20;text-decoration:none;font-weight:bold;">550-0143</a>
+        <span style="color:#DCEEE1;">&#183;</span>
+        <a href="mailto:sofus@bender.is" style="color:#221F20;text-decoration:none;">sofus@bender.is</a>
+        <span style="color:#DCEEE1;">&#183;</span>
+        <a href="https://sofusbender.github.io/bender-vef/" style="color:#167A3A;text-decoration:none;font-weight:bold;">bender.is</a>
+      </div>
+    </td>
+  </tr>
+</table>
+</script>
+
+<script>
+(function(){
+  [["sig-full","prev-full","code-full","ok-full"],["sig-stutt","prev-stutt","code-stutt","ok-stutt"]].forEach(function(s){
+    var raw = document.getElementById(s[0]).textContent.trim();
+    document.getElementById(s[1]).innerHTML = raw;
+    document.getElementById(s[2]).textContent = raw;
+  });
+  document.querySelectorAll("[data-copy]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var key = btn.dataset.copy;
+      var raw = document.getElementById(key).textContent.trim();
+      var el  = document.getElementById("ok-" + key.replace("sig-",""));
+      var done = function(){
+        el.textContent = "Afritað — límdu í undirskriftarstillingar";
+        setTimeout(function(){ el.textContent = ""; }, 2600);
+      };
+      var fallback = function(){
+        var ta = document.createElement("textarea");
+        ta.value = raw; document.body.appendChild(ta); ta.select();
+        try{ document.execCommand("copy"); done(); }
+        catch(e){ el.textContent = "Afritun mistókst — opnaðu kóðann"; }
+        document.body.removeChild(ta);
+      };
+      if(navigator.clipboard && navigator.clipboard.writeText){
+        navigator.clipboard.writeText(raw).then(done, fallback);
+      } else { fallback(); }
+    });
+  });
+  document.querySelectorAll("[data-toggle]").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var pre = document.getElementById(btn.dataset.toggle);
+      pre.classList.toggle("open");
+      btn.textContent = pre.classList.contains("open") ? "Fela kóða" : "Sýna kóða";
+    });
+  });
+})();
+</script>
+</body>
+</html>
